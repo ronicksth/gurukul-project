@@ -32,3 +32,16 @@ i{
 	height: auto;
 	background-color:cadetblue;
 }
+ul
+{
+	list-style-type: none;
+}
+ul li 
+{
+	text-align: justify;
+}
+ul li a 
+{
+	text-decoration: none;
+	color: black;
+}
