@@ -1,47 +1,148 @@
-*
-{
-	box-sizing: border-box;
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
-.carousel-inner .carousel-item img
-{
-	height: 80vh;
+
+h1, h3, h4 {
+    font-weight: 600;
 }
-.text-justify
-{
-	text-align: justify;
+
+p {
+    font-size: 1rem;
+    color: #333;
 }
-.bg-img
-{
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/seaside.jpg");
-	height: 72vh;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
-i{
-	font-size:24px;
+
+.nav-link {
+    color: #fff !important;
 }
-.text-black
-{
-	color:black !important;
+
+.nav-link:hover {
+    color: #ffc107 !important;
 }
-.infobox
-{
-	width:100%;
-	height: auto;
-	background-color:cadetblue;
+
+/* Carousel */
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover;
 }
-ul
-{
-	list-style-type: none;
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
 }
-ul li 
-{
-	text-align: justify;
+
+/* About Us */
+#about\ us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
-ul li a 
-{
-	text-decoration: none;
-	color: black;
+
+#about\ us img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#about\ us p {
+    text-align: justify;
+}
+
+/* Industries */
+#industies .col {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#industies .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Info Section */
+.infobox {
+    background: #343a40;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.infobox h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.infobox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infobox ul li {
+    margin-bottom: 10px;
+}
+
+.infobox a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.infobox a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 30px 0;
+}
+
+footer input[type="text"],
+footer input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer input[type="submit"] {
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #0b5ed7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
 }
