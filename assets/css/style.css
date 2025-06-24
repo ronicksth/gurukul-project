@@ -22,3 +22,9 @@ i{
 {
 	color:black !important;
 }
+.infobox
+{
+	width:100%;
+	height: auto;
+	background-color: black;
+}
