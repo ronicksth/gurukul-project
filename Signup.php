@@ -13,7 +13,6 @@ if($conn->connect_error)
 }
 
 
-
 if(isset($_POST["submit"]))
 {
 	$userid=$_POST["userid"];
@@ -139,10 +138,10 @@ if(isset($_POST["submit"]))
 		</select>
 
 		<label for="password">Password</label>
-		<input type="password" id="password" name="password" placeholder="Enter Password" required>
+		<input type="password" id="password" name="password" placeholder="Enter Password" required minlength="6">
 
 		<label for="confirmPassword">Confirm Password</label>
-		<input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+		<input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required minlength="6">
 
 		<span id="error-message" class="error"></span>
 
