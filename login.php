@@ -122,9 +122,24 @@ if(isset($_POST["submit"]))
 		<input type="text" name="userid" placeholder="Enter User ID" required>
 		<input type="password" name="password" placeholder="Enter Password" required minlength="6">
 		<input type="password" name="confirmPassword" placeholder="Confirm Password" required minlength="6">
+		<span id="error-message" class="error"></span>
 		<input type="submit" name="submit" value="Submit">
 	</form>
 </div>
+<script>
+	function validateForm() {
+		const password = document.getElementById("password").value;
+		const confirmPassword = document.getElementById("confirmPassword").value;
+		const errorMessage = document.getElementById("error-message");
+
+		if (password !== confirmPassword) {
+			errorMessage.textContent = "Passwords do not match.";
+			return false;
+		}
+		errorMessage.textContent = "";
+		return true;
+	}
+</script>
 
 </body>
 </html>
